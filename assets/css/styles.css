@@ -1,0 +1,11 @@
+body {
+    padding-top: 60px;
+}
+
+*[id]:before {
+    display: block;
+    content: " ";
+    margin-top: -60px;
+    height: 60px;
+    visibility: hidden;
+}
