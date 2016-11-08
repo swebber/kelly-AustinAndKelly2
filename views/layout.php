@@ -14,9 +14,18 @@
         <link href="assets/css/styles.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        
+
         <?php require_once('routes.php'); ?>
-        
+
+        <footer class="footer">
+            <div class="container">
+                <p class="text-muted text-center">
+                    If you have any questions please call<br />
+                    <b>Kelly&nbsp;Webber</b>&nbsp;610.213.3442 &nbsp; <b>Austin&nbsp;Carter</b>&nbsp;570.292.3278 &nbsp; <b>Diane&nbsp;Webber</b>&nbsp;215.540.4439
+                </p>
+            </div>
+        </footer>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="assets/js/ie10-viewport-bug-workaround.js" type="text/javascript"></script>

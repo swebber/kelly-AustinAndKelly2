@@ -29,9 +29,9 @@
                 <div class="col-xs-12 col-sm-5">
                     <img src="assets/images/photo-web-720px.png" class="img-responsive" alt=""/>
                 </div>
-                <div class="col-xs-12 col-sm-7 text-center">
+                <div class="col-xs-12 col-sm-7 text-center name-date">
                     <h1>AUSTIN &amp; KELLY</h1>
-                    <p>16 June 2017</p>
+                    <h2>16 June 2017</h2>
                 </div>
             </div>
         </div>
@@ -40,19 +40,18 @@
     <!-- rsvp section -->
     <section id='rsvp'>
         <div class="container">
-            <h1 class="rsvp-title">RSVP</h1>
-            <p class="rsvp-about">Please RSVP by May 25th</p>
+            <h1 class="text-center">RSVP</h1>
+            <p class="text-center">Please RSVP by May 25th</p>
             <form id="rsvpForm" method="post" action="/rsvp">
                 <div class="row">
-                    <div class="col-sm-1 col-md-2 hidden-xs"></div>
-                    <div class="col-xs-12 col-sm-5 col-md-4">
+                    <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-12">
                         <div class="form-group">
                             <label class="control-label" for="guestNames">Guest Name(s)</label>
                             <input type="text" class="form-control" id="guestNames" data-error="Please tell us your names." required></input>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-5 col-md-4">
+                    <div class="col-md-4 col-sm-5 col-xs-12">
                         <div class="form-group">
                             <label class="control-label" for="willAttend">Will You Be Attending?</label>
                             <select class="form-control" id="willAttend" data-error="Let us know if you will be attending." required>
@@ -65,8 +64,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-1 col-md-2 hidden-xs"></div>
-                    <div class="col-xs-12 col-sm-5 col-md-4">
+                    <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-12">
                         <div class="form-group">
                             <label class="control-label" for="needTrans">Will You Need Transportation?</label>
                             <select class="form-control" id="needTrans" data-odd="odd">
@@ -77,7 +75,7 @@
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-5 col-md-4">
+                    <div class="col-md-4 col-sm-5 col-xs-12">
                         <div class="form-group">
                             <label for="dietInfo">Dietary Restrictions</label>
                             <input type="text" class="form-control" id="dietInfo" name="dietInfo"></input>
@@ -85,8 +83,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-1 col-md-2 hidden-xs"></div>
-                    <div class="col-xs-12 col-sm-10">
+                    <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-12">
                         <div class="form-group">
                             <input type="hidden" value="NA" id="notRobot" data-captchacheck="captchacheck" data-validate="true" />
                             <div class="help-block with-errors"></div>
@@ -94,8 +91,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-1 col-md-2 hidden-xs"></div>
-                    <div class="col-xs-12 col-sm-10">
+                    <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-12">
                         <input type="submit" class="btn btn-default" value="Submit">
                     </div>
                 </div>
@@ -105,41 +101,49 @@
     <!-- end rsvp section -->
     <!-- about section -->
     <section id="about">
-        <div class="container">
-            <h1>ABOUT THE WEDDING</h1>
-            <p class="about-address">
-                <b>THE ANCHOR INN</b><br />
-                7617 WATER OAK POINT ROAD<br />
-                PASADENA, MARYLAND 21122
-            </p>
-            <p class="about-venue">
-                We are getting married at the Anchor Inn on June 16th at 6:00 PM.
-                The ceremony and reception are both taking place at the same venue and
-                will be both indoors and outdoors. For those of you bringing small children please
-                be mindful as the venue is on the water.
-            </p>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+                    <h1>ABOUT THE WEDDING</h1>
+                    <p class="about-address">
+                        <b>THE ANCHOR INN</b><br />
+                        7617 WATER OAK POINT ROAD<br />
+                        PASADENA, MARYLAND 21122
+                    </p>
+                    <p class="about-venue">
+                        We are getting married at the Anchor Inn on June 16th at 6:00 PM.
+                        The ceremony and reception are both taking place at the same venue and
+                        will be both indoors and outdoors. For those of you bringing small children please
+                        be mindful as the venue is on the water.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
     <!-- end about section -->
     <!-- lodging and transportation section -->
     <section id="lodging-transportation">
-        <div class="container">
-            <h1>LODGING & TRANSPORTATION</h1>
-            <p>
-                A block of rooms has been reserved at the Hamilton Hotel. The hotel is within
-                minutes of the Baltimore International Airport. There will be a shuttle from the 
-                airport to the Anchor Inn leaving the hotel at 5:30 PM, 
-                and taking people back to the hotel after the reception.
-            </p>
+        <div class="container text-center">
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+                    <h1>LODGING & TRANSPORTATION</h1>
+                    <p>
+                        A block of rooms has been reserved at the Hamilton Hotel. The hotel is within
+                        minutes of the Baltimore International Airport. There will be a shuttle from the 
+                        airport to the Anchor Inn leaving the hotel at 5:30 PM, 
+                        and taking people back to the hotel after the reception.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-2 col-xs-12">
                     <p>
                         <b>SHUTTLE SERVICE</b><br />
                         DEPARTS AT 5:15 PM<br />
                         LEAVES RECEPTION AT 11:00 PM
                     </p>
                 </div>
-                <div class="col-xs-12">
+                <div class="col-sm-4 col-xs-12">
                     <p>
                         <b>HAMILTON HOTEL</b><br />
                         7617 WATER OAK POINT ROAD<br />
@@ -153,9 +157,9 @@
     <!-- end lodging and transportation section -->
     <!-- registry section -->
     <section id="registry">
-        <div class="container">
+        <div class="container text-center">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                <div class="col-sm-8 col-sm-offset-2 col-xs-12">
                     <h1>REGISTERY</h1>
                     <p>We are registered at <a href="http://www.registery.com" target="_blank">registery.com</a></p>
                 </div>

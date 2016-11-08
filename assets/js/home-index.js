@@ -4,15 +4,17 @@ $(document).ready(function () {
         $('#navbar li').removeClass('active');
         $(this).addClass('active');
         $('html, body').stop().animate({
-            scrollTop: $(anchor.attr('href')).offset().top + 10
+            scrollTop: $(anchor.attr('href')).offset().top - 50
         }, 1500, 'easeInOutExpo');
         e.preventDefault();
     });
 
     $('.navbar-brand').bind('click', function(e) {
         var anchor = $(this);
+        $('#navbar li').removeClass('active');
+        $(this).addClass('active');
         $('html, body').stop().animate({
-            scrollTop: $(anchor.attr('href')).offset().top
+            scrollTop: $(anchor.attr('href')).offset().top - 50
         }, 1500, 'easeInOutExpo');
         e.preventDefault();
     });
