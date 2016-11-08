@@ -13,10 +13,10 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#rsvp">RSVP</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#lodging-transportation">Lodging/Transportation</a></li>
-                    <li><a href="#registry">Registry</a></li>
+                    <li><a href="#rsvp" data-toggle="collapse" data-target=".navbar-collapse.in">RSVP</a></li>
+                    <li><a href="#about" data-toggle="collapse" data-target=".navbar-collapse.in">About</a></li>
+                    <li><a href="#lodging-transportation" data-toggle="collapse" data-target=".navbar-collapse.in">Lodging/Transportation</a></li>
+                    <li><a href="#registry" data-toggle="collapse" data-target=".navbar-collapse.in">Registry</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
