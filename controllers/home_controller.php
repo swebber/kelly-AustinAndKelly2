@@ -1,10 +1,11 @@
 <?php
 
+require_once 'assets/lib/random.php';
+
 class HomeController {
 
     public function index() {
-        $first_name = 'Jon';
-        $last_name = 'Snow';
+        $api_token = Home::random_str(32);
         require_once('views/home/index.php');
     }
 

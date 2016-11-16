@@ -17,6 +17,7 @@
                     <li><a href="#about" data-toggle="collapse" data-target=".navbar-collapse.in">About</a></li>
                     <li><a href="#lodging-transportation" data-toggle="collapse" data-target=".navbar-collapse.in">Lodging/Transportation</a></li>
                     <li><a href="#registry" data-toggle="collapse" data-target=".navbar-collapse.in">Registry</a></li>
+                    <li><a href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Contact</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
@@ -38,11 +39,12 @@
     </section>
     <!-- end header -->
     <!-- rsvp section -->
-    <section id='rsvp'>
+    <section id="rsvp">
         <div class="container">
             <h1 class="text-center">RSVP</h1>
             <p class="text-center">Please RSVP by May 25th</p>
-            <form id="rsvpForm" method="post" action="/rsvp">
+            <form id="rsvpForm" method="post" action="">
+                <input type="hidden" id="api_token" value="<?php echo $api_token; ?>" />
                 <div class="row">
                     <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-12">
                         <div class="form-group">
@@ -67,7 +69,7 @@
                     <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-12">
                         <div class="form-group">
                             <label class="control-label" for="needTrans">Will You Need Transportation?</label>
-                            <select class="form-control" id="needTrans" data-odd="odd">
+                            <select class="form-control" id="needTrans" data-trans="trans">
                                 <option value="NA">Select ...</option>
                                 <option value="1">Yes</option>
                                 <option value="0">No</option>   
@@ -92,7 +94,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-12">
-                        <input type="submit" class="btn btn-default" value="Submit">
+                        <input type="button" id="submitBtn" class="btn btn-default" value="Submit">
                     </div>
                 </div>
             </form>
@@ -167,4 +169,15 @@
         </div>
     </section>
     <!-- end registry section -->
+
+
+    <section id="contact">
+        <div class="container text-center">
+            <p class="top-contact">
+                If you have any questions please call<br />
+                <b>Kelly&nbsp;Webber</b>&nbsp;610.213.3442 &nbsp; <b>Austin&nbsp;Carter</b>&nbsp;570.292.3278 &nbsp; <b>Diane&nbsp;Webber</b>&nbsp;215.540.4439
+            </p>
+        </div>
+    </section>
+
 </div>

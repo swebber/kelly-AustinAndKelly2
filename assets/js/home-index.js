@@ -18,4 +18,22 @@ $(document).ready(function () {
         }, 1500, 'easeInOutExpo');
         e.preventDefault();
     });
+    
+    $('#rsvpForm').validator({
+        focus: false,
+        custom: {
+            'trans': function($el) {
+                if ($el.val() === 'NA' && $('#willAttend').val() === '1')
+                    return 'Let us know if you need transportation';
+            }
+        }
+    });
+    
+    $('#submitBtn').on('click', function(e) {
+        $('#rsvpForm').validator('validate');
+        var isValid = !e.isDefaultPrevented();
+        if (isValid) {
+            e.preventDefault();
+        }
+    });
 });
